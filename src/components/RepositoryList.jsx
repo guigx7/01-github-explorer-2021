@@ -1,20 +1,22 @@
-const repositoryName = "unform7";
+import { RepositoryItem } from "./RepositoryItem";
 
-export function RepositoryList(){
-    return ( 
-        <section className="repository-list">
-            <h1>Lista de Repositórios: </h1>
+const repository = {
+  name: "unform",
+  description: "Forms in React",
+  link: "https://github.com/g7tavares/01-github-explorer",
+};
 
-            <ul>
-                <li>
-                    <strong>{repositoryName}</strong>
-                    <p>Forms in React</p>
+export function RepositoryList() {
+  return (
+    <section className="repository-list">
+      <h1>Lista de Repositórios: </h1>
 
-                    <a href="">
-                        Acessar Repositório
-                    </a>
-                </li>
-            </ul>
-        </section>
-    );
+      <ul>
+        <RepositoryItem repository={repository}/>
+        <RepositoryItem repository={repository}/>
+        <RepositoryItem repository={repository}/>
+        <RepositoryItem repository={repository}/>
+      </ul>
+    </section>
+  );
 }
