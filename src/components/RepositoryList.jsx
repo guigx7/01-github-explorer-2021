@@ -4,11 +4,6 @@ import { useState, useEffect } from "react";
 
 // https://api.github.com/orgs/rocketseat/repos
 
-const repository = {
-  name: "unform",
-  description: "Forms in React",
-  link: "https://github.com/g7tavares/01-github-explorer",
-};
 
 export function RepositoryList() {
     const [repositories, setRepositories] = useState([]);
